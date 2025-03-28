@@ -9,8 +9,8 @@ Thank you for your interest in contributing! Whether you're here to submit a sol
 1. **Fork** this repository to your own GitHub account.
 2. Clone your fork locally:
    ```bash
-   git clone https://github.com/your-username/world-happiness-challenge.git
-   cd world-happiness-challenge
+   git clone https://github.com/your-username/CePro_Happiness_Challenge.git
+   cd CePro_Happiness_Challenge
    ```
 3. Create a new branch for your solution:
    ```bash
@@ -43,3 +43,36 @@ Thank you for your interest in contributing! Whether you're here to submit a sol
 ## 📬 Questions?
 
 Feel free to open an issue if you need help or clarification.
+
+
+---
+
+## 📦 What to Include in Your Submission
+
+We expect the following:
+
+- 🧠 **Source code** (`.py`, `.js`, or `.sh`) — well-structured and clean
+- 📄 **README** with:
+  - Installation instructions
+  - How to run your solution
+  - Assumptions or decisions made
+  - (Optional) Examples or screenshots
+- 📊 (Optional) Sample output or test results (console logs, image files)
+
+---
+
+## 🧪 Evaluation Criteria
+
+Your submission will be reviewed based on:
+
+- ✅ **Code readability and structure**
+- ✅ **Correctness of the analysis**
+- ✅ **Handling of edge cases or missing data**
+- ✅ **Documentation**:
+  - Clear instructions in README
+  - In-code comments if needed
+  - Meaningful commit messages
+
+---
+
+Make it clean, simple, and expressive. Good luck and have fun! 🚀

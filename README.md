@@ -1,12 +1,7 @@
 # 🌍 World Happiness Challenge
 
-[![Python](https://img.shields.io/badge/Python-3.7%2B-blue)](https://www.python.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Made with ❤️](https://img.shields.io/badge/Made%20with-%E2%9D%A4-red)](#)
-
-This small Python app analyzes and visualizes data from the **World Happiness Report 2019**.
-
-It calculates regional happiness score averages, ranks countries by GDP, and visualizes the correlation between GDP and happiness scores — all in a single image.
+Welcome to the **World Happiness Challenge**!
+Use the provided dataset to explore, analyze, and visualize insights related to global happiness.
 
 ---
 
@@ -67,6 +62,3 @@ It contains country-level data for:
 
 ---
 
-## 📃 License
-
-MIT License. Feel free to use, modify, and share!

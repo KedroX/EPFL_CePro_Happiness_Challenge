@@ -4,16 +4,16 @@ import numpy as np
 # For facility reasons, the datas from `js/index.js` are copied here to generate the charts
 
 happiness_by_region = {
-  'Southern Asia': 4.7938,
-  'Central and Eastern Europe': 5.566733333333333,
-  'Middle East and Northern Africa': 5.237,
-  'Latin America and Caribbean': 5.942549999999999,
-  'Australia and New Zealand': 7.2675,
-  'Western Europe': 6.8984,
-  'Sub-Saharan Africa': 4.34619512195122,
-  'Southeastern Asia': 5.202166666666667,
-  'North America': 7.085,
-  'Eastern Asia': 5.688833333333332
+    'Southern Asia': 4.7938,
+    'Central and Eastern Europe': 5.566733333333333,
+    'Middle East and Northern Africa': 5.237,
+    'Latin America and Caribbean': 5.942549999999999,
+    'Australia and New Zealand': 7.2675,
+    'Western Europe': 6.8984,
+    'Sub-Saharan Africa': 4.34619512195122,
+    'Southeastern Asia': 5.202166666666667,
+    'North America': 7.085,
+    'Eastern Asia': 5.688833333333332
 }
 
 top10_countries_by_gdp = [

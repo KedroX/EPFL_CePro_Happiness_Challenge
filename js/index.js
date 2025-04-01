@@ -71,7 +71,7 @@ fs.readFile(filePath, 'utf8', (err, data) => {
     console.log('Top 10 countries by GDP');
     console.log('----------------------');
     for (let index = 0; index < 10; index++) {
-        console.log(gdpSorted[index]);
+        console.log(`${index + 1}. ${gdpSorted[index]['Country']}: ${gdpSorted[index]['GDP 2019']}`);
     }
 
     // Bottom 10 countries by GDP
@@ -79,7 +79,7 @@ fs.readFile(filePath, 'utf8', (err, data) => {
     console.log('Bottom 10 countries by GDP');
     console.log('----------------------');
     for (let index = gdpSorted.length - 1; index >= gdpSorted.length - 10; index--) {
-        console.log(gdpSorted[index]);
+        console.log(`${gdpSorted.length - index}. ${gdpSorted[index]['Country']}: ${gdpSorted[index]['GDP 2019']}`);
     }
 
     /* 2. Comparisons */

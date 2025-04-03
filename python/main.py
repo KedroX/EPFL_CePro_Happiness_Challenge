@@ -10,8 +10,27 @@ parser = argparse.ArgumentParser(description="Generate and optionally save chart
 parser.add_argument('--save', action='store_true', help="Save the charts as images instead of displaying them.")
 args = parser.parse_args()
 
-# Read the CSV file provided into a DataFrame
-df = pd.read_csv('../data/data-2019.csv')
+# Try to read the CSV file provided into a DataFrame, will exit if the file is not found
+try:
+    df = pd.read_csv('../data/data-2019.csv')
+except FileNotFoundError:
+    print("File not found. Please check the path to the CSV file.")
+    exit()
+except pd.errors.EmptyDataError:
+    print("Empty CSV file. Please check the CSV file path and contents.")
+    exit()
+
+# Check if the DataFrame is empty and exit accordingly
+if df.empty :
+    print("The DataFrame is empty. Please check the CSV file path and contents.")
+    exit()
+
+# Check if the required columns are present in the DataFrame, exiting if not
+# source: https://stackoverflow.com/questions/24870306/how-to-check-if-a-column-exists-in-pandas/44119747
+required_columns = ['Country', 'Region', 'GDP 2019', 'Score 2019']
+if all(item in df.columns for item in required_columns) == False:
+    print("The DataFrame does not contain the required columns. Please check the CSV file.")
+    exit()
 
 # Get the average happiness and gdp score value for each region
 region_avg_happiness = df.groupby('Region')["Score 2019"].mean()

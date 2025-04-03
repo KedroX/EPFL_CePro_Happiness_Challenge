@@ -13,7 +13,7 @@ args = parser.parse_args()
 # Read the CSV file provided into a DataFrame
 df = pd.read_csv('../data/data-2019.csv')
 
-# get the average happiness and gdp score value for each region
+# Get the average happiness and gdp score value for each region
 region_avg_happiness = df.groupby('Region')["Score 2019"].mean()
 region_avg_gdp = df.groupby('Region')["GDP 2019"].mean()
 
@@ -66,7 +66,7 @@ plt.ylabel('Average Country Happiness (score)', fontsize=14)
 plt.grid(True, linestyle='--', alpha=0.6)
 
 # Save the chart as an image instead of rendering it if the --save argument is passed 
-# otherwise it will open the charts to a new window
+# Otherwise it will open the charts to a new window
 if args.save:
     print("\nDetected 'save' argument, chart images saved in the /python folder")
     plt.savefig('GDP_vs_Country_Average_Happiness.png')  # Save the chart as an image

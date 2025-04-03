@@ -35,7 +35,7 @@ Launch the script using python
 python3 main.py
 ```
 
-if you pass the argument `--save` the script won't launch a window displaying the charts but will instead save images of the charts in the same folder of the script: `/python`
+if you pass the argument `--save` the script won't launch a window displaying the charts but will instead save images of the charts in the same folder as the script: `/python`
 
 ```bash
 python3 main.py --save
